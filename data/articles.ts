@@ -6,7 +6,7 @@ export const articles: Article[] = [
     title: { fr: "Architecture & Voyage : Inspirations d'ailleurs", en: "Architecture & Travel: Inspiration from Elsewhere" },
     excerpt: { fr: "Chaque ville et chaque bâtisse racontent une histoire capable d'enrichir le regard de l'architecte.", en: "Every city and building tells a story capable of enriching the architect's eye." },
     date: "2025-11-12", readingTime: 2, category: "insight",
-    image: "https://static.wixstatic.com/media/a05c64_7770241d61eb460f8506fe5c8e6f0c04~mv2.jpeg",
+    image: "/images/news/article-01.jpeg",
     body: [{ fr: "Voyager ouvre le regard sur d'autres manières de construire, d'habiter et de composer avec le climat, la matière et la culture.", en: "Travel opens the eye to other ways of building, living and composing with climate, material and culture." }]
   },
   {
@@ -14,7 +14,7 @@ export const articles: Article[] = [
     title: { fr: "Les Avantages de la Construction Modulaire", en: "The Benefits of Modular Construction" },
     excerpt: { fr: "Une approche innovante qui transforme la manière de concevoir et d'exécuter les bâtiments.", en: "An innovative approach transforming how buildings are designed and delivered." },
     date: "2025-02-19", readingTime: 3, category: "insight",
-    image: "https://static.wixstatic.com/media/a05c64_bfabb2ade25040d1a7c376d88f46806c~mv2.jpeg",
+    image: "/images/news/article-02.jpeg",
     body: [{ fr: "La construction modulaire permet de rationaliser les délais, la qualité et l'organisation du chantier lorsque le système est correctement conçu.", en: "Modular construction can streamline schedules, quality and site organization when the system is properly designed." }]
   },
   {
@@ -22,7 +22,7 @@ export const articles: Article[] = [
     title: { fr: "Nouvel An 2025 : Un Moment Festif et un Succès Partagé", en: "New Year 2025: A Shared Celebration" },
     excerpt: { fr: "Une célébration placée sous le signe de la cohésion et du renouvellement de la triple certification ISO.", en: "A celebration of team cohesion and the renewal of the firm's triple ISO certification." },
     date: "2025-02-03", readingTime: 1, category: "studio",
-    image: "https://static.wixstatic.com/media/a05c64_365e22629c454cc5a6edc26e5717a0ad~mv2.jpeg",
+    image: "/images/news/article-03.jpeg",
     body: [{ fr: "Le cabinet a réuni collaborateurs et prestataires pour célébrer l'année et souligner le renouvellement de sa triple certification ISO.", en: "The studio brought together team members and partners to celebrate the year and highlight the renewal of its triple ISO certification." }]
   },
   {
@@ -30,7 +30,7 @@ export const articles: Article[] = [
     title: { fr: "Techniques de Rénovation et de Réhabilitation", en: "Renovation and Rehabilitation Techniques" },
     excerpt: { fr: "Transformer l'existant tout en préservant sa valeur architecturale et fonctionnelle.", en: "Transforming existing buildings while preserving architectural and functional value." },
     date: "2024-12-23", readingTime: 2, category: "insight",
-    image: "https://static.wixstatic.com/media/a05c64_2894a3d5887244de8773af3cca4d81d5~mv2.jpeg",
+    image: "/images/news/article-04.jpeg",
     body: [{ fr: "Toute réhabilitation sérieuse commence par le diagnostic, l'identification des pathologies et une stratégie d'intervention adaptée.", en: "A sound rehabilitation project begins with diagnosis, identification of building pathologies and an adapted intervention strategy." }]
   },
   {
@@ -38,7 +38,7 @@ export const articles: Article[] = [
     title: { fr: "L'ergonomie dans la conception architecturale", en: "Ergonomics in Architectural Design" },
     excerpt: { fr: "Allier esthétique, usages, confort et bien-être dans la conception des espaces.", en: "Combining aesthetics, use, comfort and well-being in spatial design." },
     date: "2024-11-26", readingTime: 2, category: "insight",
-    image: "https://static.wixstatic.com/media/a05c64_b8289f22bc6f44e99cc18b3d77280d85~mv2.jpeg",
+    image: "/images/news/article-05.jpeg",
     body: [{ fr: "L'ergonomie place l'humain au centre de la conception et permet d'améliorer confort, sécurité et efficacité des espaces.", en: "Ergonomics places people at the center of design, improving comfort, safety and spatial efficiency." }]
   },
   {
@@ -46,7 +46,7 @@ export const articles: Article[] = [
     title: { fr: "Comprendre l'Architecture Durable", en: "Understanding Sustainable Architecture" },
     excerpt: { fr: "Bâtir un avenir responsable à travers des choix adaptés au climat, aux ressources et aux usages.", en: "Building responsibly through choices adapted to climate, resources and use." },
     date: "2024-10-21", readingTime: 3, category: "sustainability",
-    image: "https://static.wixstatic.com/media/a05c64_7e3571719f2444eb9f5b237f70c5976b~mv2.webp",
+    image: "/images/news/article-06.webp",
     body: [{ fr: "Pour TRIUMPHUS, la durabilité relie contexte, sobriété, qualité constructive et pérennité des usages.", en: "For TRIUMPHUS, sustainability connects context, restraint, construction quality and long-term use." }]
   }
 ];

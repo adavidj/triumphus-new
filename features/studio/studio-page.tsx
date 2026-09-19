@@ -4,7 +4,7 @@ import { values } from "@/data/content";
 import { Reveal } from "@/components/motion/reveal";
 import { InnerPageHero } from "@/components/layout/inner-page-hero";
 
-const portrait = "https://static.wixstatic.com/media/a05c64_462e043a5e8b482881841da378dd60cc~mv2.jpg";
+const portrait = "/images/studio/narcisse-justin-soglo.jpg";
 
 export function StudioPage({ locale }: { locale: Locale }) {
   const axesFr = ["Moderniser la gouvernance autour de la satisfaction client et de l'ambition internationale.", "Redynamiser le pilotage des opérations et des équipes pour garantir la qualité et les délais.", "Promouvoir la performance par la formation et l'amélioration de la qualité de vie au travail.", "Assurer la sécurité de l'environnement bâti et préserver les équilibres naturels."];

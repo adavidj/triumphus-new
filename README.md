@@ -57,9 +57,7 @@ pnpm start
 
 ## Images
 
-Les 28 visuels projets et le portrait du fondateur utilisent actuellement les médias publics déjà présents sur le site Wix de TRIUMPHUS via `static.wixstatic.com`. `next.config.ts` autorise ce domaine.
-
-Pour la migration finale, télécharger les originaux et les déplacer dans `public/images/` afin de supprimer toute dépendance au Wix historique.
+Les visuels des projets, des actualités et du cabinet sont stockés dans `public/images/`. Le site ne dépend donc plus du serveur d'images Wix historique. Les plus grands originaux ont été redimensionnés à 2560 px maximum, puis Next.js génère automatiquement les formats AVIF/WebP adaptés à chaque écran.
 
 ## Formulaires
 

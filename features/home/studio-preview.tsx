@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/site";
 import { routeFor } from "@/lib/site";
 import { Reveal } from "@/components/motion/reveal";
-const portrait = "https://static.wixstatic.com/media/a05c64_462e043a5e8b482881841da378dd60cc~mv2.jpg";
+const portrait = "/images/studio/narcisse-justin-soglo.jpg";
 import { ArrowUpRight } from "lucide-react";
 
 export function StudioPreview({ locale }: { locale: Locale }) {
