@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import { NewsPage } from "@/features/news/news-page"; export const metadata: Metadata = { title:"Actualités" }; export default function Page(){ return <NewsPage locale="fr"/>; }

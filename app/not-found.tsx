@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+export default function NotFound() { return <main className="arch-grid min-h-screen bg-[#101513] text-white grid place-items-center px-6"><div className="text-center"><p className="label text-[#d8ff46]">TRIUMPHUS / 404</p><h1 className="mt-6 font-display text-6xl leading-[.9] md:text-9xl">Page<br /><em className="text-white/40">introuvable.</em></h1><Link href="/" className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#e1693f] px-7 py-4 text-[10px] uppercase tracking-[.2em]">Retour à l&apos;accueil<ArrowUpRight className="size-4" /></Link></div></main>; }

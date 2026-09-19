@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import { ProjectsPage } from "@/features/projects/projects-page"; export const metadata: Metadata = { title:"Projects", description:"Explore 28 projects by TRIUMPHUS Architecture Firm." }; export default function Page(){ return <ProjectsPage locale="en"/>; }

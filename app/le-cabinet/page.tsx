@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import { StudioPage } from "@/features/studio/studio-page"; export const metadata: Metadata = { title:"Le Cabinet" }; export default function Page(){ return <StudioPage locale="fr"/>; }

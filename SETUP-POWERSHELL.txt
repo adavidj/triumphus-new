@@ -1,0 +1,42 @@
+TRIUMPHUS PREMIUM — INSTALLATION POWERSHELL
+
+1) Ouvrir PowerShell dans le dossier où vous avez décompressé le projet.
+
+2) Entrer dans le projet :
+cd .\triumphus-premium
+
+3) Vérifier Node.js :
+node -v
+
+Recommandé : Node.js 22 LTS ou plus récent compatible avec Next.js 16.
+
+4) Si pnpm est déjà installé :
+pnpm -v
+
+Si pnpm n'est pas reconnu :
+corepack enable
+corepack prepare pnpm@10.15.0 --activate
+
+5) Installer les dépendances :
+pnpm install
+
+6) Lancer le site :
+pnpm dev
+
+7) Ouvrir :
+http://localhost:3000
+
+VALIDATION AVANT VERCEL
+
+pnpm typecheck
+pnpm lint
+pnpm build
+pnpm start
+
+DEPLOIEMENT VERCEL (CLI, facultatif)
+
+pnpm dlx vercel
+
+IMPORTANT
+- Les images projets sont actuellement chargées depuis les médias publics Wix de TRIUMPHUS.
+- Les formulaires valident et répondent correctement, mais la persistance DB/e-mail sera branchée avec le futur dashboard.

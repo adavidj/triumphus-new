@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import { CareersPage } from "@/features/careers/careers-page"; export const metadata: Metadata = { title:"Nous rejoindre" }; export default function Page(){ return <CareersPage locale="fr"/>; }
