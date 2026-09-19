@@ -64,7 +64,7 @@ export function ProjectsExplorer({ locale }: { locale: Locale }) {
                 <motion.article layout key={project.id} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: .97 }} transition={{ duration: .5, ease: [.22, 1, .36, 1] }} className={wide ? "md:col-span-2 xl:col-span-7" : "xl:col-span-5"}>
                   <Link href={`${routeFor(locale, "projects")}/${project.slug}`} className="group block">
                     <div className={`relative overflow-hidden bg-[#d2d0c8] ${wide ? "aspect-[16/10]" : "aspect-[4/3] md:aspect-[4/5]"}`}>
-                      <Image src={project.cover} alt={project.title[locale]} fill sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 58vw" className="object-cover grayscale-[12%] transition-all duration-[1.2s] ease-[var(--ease-premium)] group-hover:scale-[1.04] group-hover:grayscale-0" />
+                      <Image src={project.cover} alt={project.title[locale]} fill quality={95} sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 58vw" className="object-cover grayscale-[12%] transition-all duration-[1.2s] ease-[var(--ease-premium)] group-hover:scale-[1.04] group-hover:grayscale-0" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-70" />
                       <span className="label glass absolute left-4 top-4 rounded-full px-3 py-2 text-white">{String(index + 1).padStart(2, "0")}</span>
                       <span className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-[#d8ff46] text-black opacity-100 transition-all duration-500 md:right-5 md:top-5 md:size-11 md:opacity-0 md:group-hover:opacity-100"><ArrowUpRight className="size-5" /></span>

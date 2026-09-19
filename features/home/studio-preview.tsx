@@ -23,7 +23,7 @@ export function StudioPreview({ locale }: { locale: Locale }) {
         </div>
 
         <div className="relative min-h-[38rem] lg:col-span-7 lg:min-h-[52rem]">
-          <Image src={portrait} alt="Narcisse Justin SOGLO" fill sizes="(max-width:1024px) 100vw, 58vw" className="object-cover object-top grayscale-[20%]" />
+          <Image src={portrait} alt="Narcisse Justin SOGLO" fill quality={95} sizes="(max-width:1024px) 100vw, 58vw" className="object-cover object-top grayscale-[20%]" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#071d26]/80 via-transparent to-transparent" />
           <div className="glass absolute inset-x-4 bottom-4 flex items-end justify-between gap-4 p-5 md:inset-x-8 md:bottom-8 md:p-7">
             <div><p className="label text-[#d8ff46]">Direction</p><p className="mt-2 font-display text-3xl md:text-4xl">Narcisse Justin SOGLO</p></div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import type { Locale } from "@/lib/site";
 import { routeFor, site } from "@/lib/site";
@@ -17,9 +18,8 @@ export function Footer({ locale }: { locale: Locale }) {
       <div className="site-container relative py-16 md:py-24">
         <div className="grid gap-14 border-b border-white/15 pb-16 lg:grid-cols-12">
           <div className="lg:col-span-6">
-            <Link href={routeFor(locale, "home")} className="inline-flex items-center gap-4">
-              <span className="grid size-12 place-items-center rounded-full border border-white/25 font-display text-2xl italic">T</span>
-              <span className="text-xl tracking-[.24em]">TRIUMPHUS</span>
+            <Link href={routeFor(locale, "home")} aria-label="TRIUMPHUS — Home" className="group relative block h-24 w-40 overflow-hidden">
+              <Image src="/brand/triumphus-logo.jpg" alt="TRIUMPHUS" fill sizes="160px" unoptimized className="object-contain transition-transform duration-500 group-hover:scale-[1.03]" />
             </Link>
             <p className="mt-8 max-w-md text-sm leading-7 text-white/45">{locale === "fr" ? "Architecture, urbanisme et design. Depuis Cotonou, nous construisons un futur concret, durable et profondément humain." : "Architecture, urban planning and design. From Cotonou, we build a concrete, sustainable and deeply human future."}</p>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowDownRight, ArrowUpRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -17,11 +18,8 @@ const items = [
 
 function Brand({ locale, onClick }: { locale: Locale; onClick?: () => void }) {
   return (
-    <Link href={routeFor(locale, "home")} onClick={onClick} aria-label="TRIUMPHUS — Home" className="group flex items-center gap-2.5 text-white sm:gap-3">
-      <span className="relative grid size-8 place-items-center overflow-hidden rounded-full border border-white/25 font-display text-base italic sm:size-9 sm:text-lg">
-        T<span className="absolute bottom-0 h-[2px] w-full bg-[#e1693f] transition-all duration-500 group-hover:h-full group-hover:opacity-25" />
-      </span>
-      <span className="text-[11px] font-medium tracking-[.2em] sm:text-sm sm:tracking-[.24em]">TRIUMPHUS</span>
+    <Link href={routeFor(locale, "home")} onClick={onClick} aria-label="TRIUMPHUS — Home" className="group relative block h-12 w-[4.75rem] overflow-hidden sm:h-14 sm:w-[5.5rem]">
+      <Image src="/brand/triumphus-logo.jpg" alt="TRIUMPHUS" fill sizes="88px" unoptimized className="object-contain transition-transform duration-500 group-hover:scale-[1.04]" />
     </Link>
   );
 }

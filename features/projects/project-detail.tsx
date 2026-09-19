@@ -22,7 +22,7 @@ export function ProjectDetail({ project, locale }: { project: Project; locale: L
   return (
     <article className="bg-[#e9e7e0]">
       <header className="relative min-h-[88svh] overflow-hidden bg-[#101513] text-white">
-        <Image src={project.cover} alt={project.title[locale]} fill priority loading="eager" sizes="100vw" className="object-cover" />
+        <Image src={project.cover} alt={project.title[locale]} fill priority loading="eager" quality={95} sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/35 to-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
         <div className="site-container relative flex min-h-[88svh] flex-col justify-end pb-10 pt-36">
@@ -50,14 +50,14 @@ export function ProjectDetail({ project, locale }: { project: Project; locale: L
       </section>
 
       <section className="site-container pb-28 md:pb-40">
-        <Reveal><div className="relative aspect-[16/10] overflow-hidden"><Image src={project.cover} alt={project.title[locale]} fill sizes="100vw" className="object-cover" /></div></Reveal>
+        <Reveal><div className="relative aspect-[16/10] overflow-hidden"><Image src={project.cover} alt={project.title[locale]} fill quality={95} sizes="100vw" className="object-cover" /></div></Reveal>
         <div className="mt-6 grid gap-6 md:grid-cols-12">
-          <Reveal className="md:col-span-7"><div className="relative aspect-[4/3] overflow-hidden"><Image src={project.gallery[0] ?? project.cover} alt="" fill sizes="60vw" className="object-cover object-left" /></div></Reveal>
-          <Reveal className="md:col-span-5" delay={.08}><div className="relative aspect-[4/5] overflow-hidden"><Image src={project.gallery[1] ?? project.cover} alt="" fill sizes="40vw" className="object-cover object-right" /></div></Reveal>
+          <Reveal className="md:col-span-7"><div className="relative aspect-[4/3] overflow-hidden"><Image src={project.gallery[0] ?? project.cover} alt="" fill quality={95} sizes="60vw" className="object-cover object-left" /></div></Reveal>
+          <Reveal className="md:col-span-5" delay={.08}><div className="relative aspect-[4/5] overflow-hidden"><Image src={project.gallery[1] ?? project.cover} alt="" fill quality={95} sizes="40vw" className="object-cover object-right" /></div></Reveal>
         </div>
       </section>
 
-      {related.length > 0 && <section className="border-t border-black/15 py-24 md:py-32"><div className="site-container"><div className="mb-12 flex items-end justify-between"><div><p className="label text-[#e1693f]">02 / {locale === "fr" ? "À découvrir" : "Discover more"}</p><h2 className="mt-5 font-display text-5xl md:text-7xl">{locale === "fr" ? "Projets liés" : "Related projects"}</h2></div></div><div className="grid gap-6 md:grid-cols-3">{related.map((item) => <Link key={item.id} href={`${routeFor(locale, "projects")}/${item.slug}`} className="group"><div className="relative aspect-[4/5] overflow-hidden"><Image src={item.cover} alt={item.title[locale]} fill sizes="33vw" className="object-cover transition-transform duration-1000 group-hover:scale-[1.04]" /><span className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-white opacity-0 transition-opacity group-hover:opacity-100"><ArrowUpRight className="size-4" /></span></div><div className="mt-4 flex items-start justify-between border-t border-black/15 pt-4"><div><p className="font-display text-2xl">{item.title[locale]}</p><p className="label mt-2 text-black/35">{item.location}</p></div></div></Link>)}</div></div></section>}
+      {related.length > 0 && <section className="border-t border-black/15 py-24 md:py-32"><div className="site-container"><div className="mb-12 flex items-end justify-between"><div><p className="label text-[#e1693f]">02 / {locale === "fr" ? "À découvrir" : "Discover more"}</p><h2 className="mt-5 font-display text-5xl md:text-7xl">{locale === "fr" ? "Projets liés" : "Related projects"}</h2></div></div><div className="grid gap-6 md:grid-cols-3">{related.map((item) => <Link key={item.id} href={`${routeFor(locale, "projects")}/${item.slug}`} className="group"><div className="relative aspect-[4/5] overflow-hidden"><Image src={item.cover} alt={item.title[locale]} fill quality={95} sizes="33vw" className="object-cover transition-transform duration-1000 group-hover:scale-[1.04]" /><span className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-white opacity-0 transition-opacity group-hover:opacity-100"><ArrowUpRight className="size-4" /></span></div><div className="mt-4 flex items-start justify-between border-t border-black/15 pt-4"><div><p className="font-display text-2xl">{item.title[locale]}</p><p className="label mt-2 text-black/35">{item.location}</p></div></div></Link>)}</div></div></section>}
 
       <Link href={`${routeFor(locale, "projects")}/${next.slug}`} className="group relative block overflow-hidden bg-[#0c3241] py-24 text-white md:py-32">
         <div className="ambient-orb absolute -right-24 -top-24 size-96 bg-[#e1693f]" />

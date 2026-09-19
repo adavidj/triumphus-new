@@ -26,7 +26,7 @@ export function StudioPage({ locale }: { locale: Locale }) {
 
       <section className="relative overflow-hidden bg-[#101513] text-white">
         <div className="site-container grid lg:grid-cols-12">
-          <div className="relative min-h-[42rem] lg:col-span-7 lg:min-h-[58rem]"><Image src={portrait} alt="Narcisse Justin SOGLO" fill sizes="(max-width:1024px) 100vw, 58vw" className="object-cover object-top grayscale-[15%]" /><div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /><div className="glass absolute inset-x-5 bottom-5 p-5 md:inset-x-8 md:bottom-8 md:p-7"><p className="label text-[#d8ff46]">Architecte-Gérant · ONAUB n°86</p><p className="mt-3 font-display text-4xl">Narcisse Justin SOGLO</p></div></div>
+          <div className="relative min-h-[42rem] lg:col-span-7 lg:min-h-[58rem]"><Image src={portrait} alt="Narcisse Justin SOGLO" fill quality={95} sizes="(max-width:1024px) 100vw, 58vw" className="object-cover object-top grayscale-[15%]" /><div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /><div className="glass absolute inset-x-5 bottom-5 p-5 md:inset-x-8 md:bottom-8 md:p-7"><p className="label text-[#d8ff46]">Architecte-Gérant · ONAUB n°86</p><p className="mt-3 font-display text-4xl">Narcisse Justin SOGLO</p></div></div>
           <div className="flex flex-col justify-center py-20 lg:col-span-5 lg:px-16">
             <p className="label text-[#d8ff46]">02 / Direction</p>
             <h2 className="mt-7 font-display text-[clamp(3.5rem,6vw,6rem)] leading-[.88] tracking-[-.04em]">Une vision.<br /><em className="text-white/45">Un cap.</em></h2>

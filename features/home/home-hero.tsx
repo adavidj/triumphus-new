@@ -26,7 +26,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
   return (
     <section ref={root} className="noise relative min-h-[100svh] overflow-hidden bg-[#0b0f0e] text-white">
       <div data-hero-image className="absolute inset-0 origin-center">
-        <Image src={hero.cover} alt={hero.title[locale]} fill priority loading="eager" sizes="100vw" className="object-cover object-center" />
+        <Image src={hero.cover} alt={hero.title[locale]} fill priority loading="eager" quality={95} sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,11,10,.9)_0%,rgba(7,11,10,.56)_42%,rgba(7,11,10,.12)_78%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,8,8,.6)_0%,transparent_30%,rgba(5,8,8,.74)_100%)]" />
       </div>
@@ -57,7 +57,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
           <Link data-hero-meta href={`${routeFor(locale, "projects")}/${hero.slug}`} className="glass group mb-2 block p-4 transition-colors duration-500 hover:bg-white/10 lg:col-span-3">
             <div className="relative aspect-[16/9] overflow-hidden">
-              <Image src={hero.cover} alt="" fill sizes="360px" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image src={hero.cover} alt="" fill quality={95} sizes="360px" className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <span className="absolute right-2 top-2 grid size-8 place-items-center rounded-full bg-[#d8ff46] text-[#111614]"><ArrowUpRight className="size-4" /></span>
             </div>
             <div className="mt-4 flex items-end justify-between gap-4">

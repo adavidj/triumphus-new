@@ -24,7 +24,7 @@ export function FeaturedProjects({ locale }: { locale: Locale }) {
               <Link href={`${routeFor(locale, "projects")}/${project.slug}`} className="group grid gap-6 lg:grid-cols-12 lg:items-end">
                 <div className={`${index % 2 ? "lg:order-2 lg:col-start-6 lg:col-end-13" : "lg:col-span-8"}`}>
                   <div className={`relative overflow-hidden ${index % 2 ? "aspect-[4/5] lg:aspect-[5/4]" : "aspect-[16/10]"}`}>
-                    <Image src={project.cover} alt={project.title[locale]} fill sizes="(max-width:1024px) 100vw, 66vw" className="object-cover grayscale-[18%] transition-all duration-[1.4s] ease-[var(--ease-premium)] group-hover:scale-[1.045] group-hover:grayscale-0" />
+                    <Image src={project.cover} alt={project.title[locale]} fill quality={95} sizes="(max-width:1024px) 100vw, 66vw" className="object-cover grayscale-[18%] transition-all duration-[1.4s] ease-[var(--ease-premium)] group-hover:scale-[1.045] group-hover:grayscale-0" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60" />
                     <span className="absolute right-5 top-5 grid size-12 place-items-center rounded-full bg-white text-black opacity-0 transition-all duration-500 group-hover:opacity-100"><ArrowUpRight className="size-5" /></span>
                     <span className="label absolute bottom-5 left-5 rounded-full border border-white/25 bg-black/20 px-3 py-2 backdrop-blur-md">{project.status?.[locale] ?? (locale === "fr" ? "Projet" : "Project")}</span>

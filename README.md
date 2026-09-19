@@ -57,7 +57,7 @@ pnpm start
 
 ## Images
 
-Les visuels des projets, des actualités et du cabinet sont stockés dans `public/images/`. Le site ne dépend donc plus du serveur d'images Wix historique. Les plus grands originaux ont été redimensionnés à 2560 px maximum, puis Next.js génère automatiquement les formats AVIF/WebP adaptés à chaque écran.
+Les visuels des projets, des actualités et du cabinet sont stockés dans `public/images/`. Le site ne dépend donc plus du serveur d'images Wix historique. Les fichiers originaux haute définition sont conservés et Next.js génère automatiquement les formats AVIF/WebP adaptés à chaque écran avec une qualité de 95.
 
 ## Formulaires
 
@@ -65,4 +65,4 @@ Contact et candidature sont validés côté client et côté serveur puis transm
 
 ## Logo
 
-Le fichier fourni est placé dans `public/brand/triumphus-logo.jpg`. Pour la production, remplacer idéalement par la version SVG officielle ou un PNG transparent haute définition sans modifier le nom de fichier dans les composants.
+Le logo officiel est placé dans `public/brand/triumphus-logo.jpg` et utilisé sans recompression dans la navigation et le pied de page. Une future version SVG ou PNG transparente pourra le remplacer sans modifier les composants.
